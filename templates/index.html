@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Live Streaming Web App</title>
+    <style>
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      flex-wrap: nowrap;
+    }
+    .img-responsive {
+      position: relative;
+      top: -10px;
+      height: 480px;
+      width: 720px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <h1>Live Streaming Web App</h1>
+    </div>
+    <img src="{{ url_for('video_feed') }}" class="img-responsive" alt="live_streaming" title="live streaming">
+  </body>
+</html>
