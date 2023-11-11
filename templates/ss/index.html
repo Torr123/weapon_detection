@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Weapon Detection Web App</title>
+    <style>
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      flex-wrap: nowrap;
+    }
+    .img-responsive {
+      position: relative;
+      top: -10px;
+      height: 480px;
+      width: 720px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <h1>Weapon Detection Web App</h1>
+    </div>
+    <img src="{{ url_for('video_feed') }}" class="img-responsive" alt="live_streaming" title="live streaming">
+  </body>
+  <form method="POST">
+    <div><label>RSTP video link or path to mp4 video: <input type="text" name="remote_ip_get"></label></div>
+    <input type="submit" value="Submit">
+  </form>
+  <body>
+    <div>Для запуска детекции оружия на тестовых данных в поле выше введите:</div>
+    <div>train/no_weapon/video_{номер видео от 1 до 7}_nw.mp4</div>
+    <div>train/weapon/video_{номер видео от 1 до 5}_w.mp4</div>
+    <div>или путь до mp4 файла загруженого на сервер в формате test/{Имя файла}.mp4</div>
+    <div>Для передачи файла на сервер пройдите по ссылке:</div>
+    <div>http://127.0.0.1:8080/upload_file</div>
+</body>
+</html>

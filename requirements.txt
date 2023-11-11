@@ -1,12 +1,21 @@
+Flask
 Click==7.0
-Flask==1.1.1
 gunicorn==20.0.4
 imutils==0.5.3
 itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
-numpy==1.17.4
-opencv-contrib-python==4.2.0.32
-Werkzeug==0.16.0
-gevent==1.4.0
-greenlet==0.4.15
+numpy==1.22.2
+opencv-contrib-python==4.8.0.76
+torch==1.12.0
+torchvision==0.13.0
+opencv-python>=4.1.1
+Pillow>=10.0.1
+psutil  # system resources
+PyYAML>=5.3.1
+requests>=2.23.0
+scipy>=1.4.1
+thop>=0.1.1  # FLOPs computation
+ultralytics>=8.0.147
+onnx
+onnxruntime

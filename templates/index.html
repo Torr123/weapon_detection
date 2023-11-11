@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Live Streaming Web App</title>
+    <title>Weapon Detection Web App</title>
     <style>
     .flex-container {
       display: flex;
@@ -18,8 +18,17 @@
   </head>
   <body>
     <div class="flex-container">
-      <h1>Live Streaming Web App</h1>
+      <h1>Weapon Detection Web App</h1>
     </div>
     <img src="{{ url_for('video_feed') }}" class="img-responsive" alt="live_streaming" title="live streaming">
   </body>
+  <form method="POST">
+    <div><label>RSTP video link or path to mp4 video: <input type="text" name="remote_ip_get"></label></div>
+    <input type="submit" value="Submit">
+  </form>
+  <body>
+    <div>Путь до mp4 файла загруженого на сервер в формате test/{Имя файла}.mp4</div>
+    <div>Для передачи файла на сервер пройдите по ссылке:</div>
+    <div>http://77.40.50.253:25025/upload_file</div>
+</body>
 </html>
